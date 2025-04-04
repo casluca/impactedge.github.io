@@ -1,0 +1,146 @@
+/* Portfolio Page Specific Styles */
+.portfolio-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../images/portfolio-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: 8rem 0 4rem;
+    margin-top: 4.5rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    background: var(--light-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.case-study-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.case-study-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.case-study-card:hover {
+    transform: translateY(-10px);
+}
+
+.case-study-content {
+    padding: 1.5rem;
+}
+
+.client {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.results {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.result-item {
+    text-align: center;
+}
+
+.result-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.learn-more {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.testimonials {
+    padding: 4rem 0;
+    background: var(--light-color);
+    text-align: center;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.quote {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.quote i {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    color: var(--light-color);
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.quote p {
+    position: relative;
+    z-index: 2;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.client-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client-name {
+    font-weight: 700;
+}
+
+.client-title {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ImpactEdge Consulting</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ImpactEdge</h1>
+            <span>Consulting</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <h2>Get In Touch</h2>
+        <p>Ready to discuss how we can help your organization? Reach out today.</p>
+    </section>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@impactedge.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+254795121323</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>6200<br>JKUAT<br>Nairobi, Kenya, 00200</p>
+            </div>
+            
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm" action="/submit-form" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <input type="text" id="organization" name="organization">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Interest</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="data-analytics">Data Analytics</option>
+                        <option value="it-systems">IT Systems</option>
+                        <option value="m-e">Monitoring & Evaluation</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="training">Training</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="formResponse"></div>
+        </div>
+    </section>
+
+    <section class="consultation-cta">
+        <h3>Schedule a Free Consultation</h3>
+        <p>Book a 30-minute discovery call to discuss your needs and how we can help.</p>
+        <a href="#" class="cta-button">Schedule Now</a>
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
